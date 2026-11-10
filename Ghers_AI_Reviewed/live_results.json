@@ -1,0 +1,86 @@
+[
+  {
+    "city": "Buraydah",
+    "http_status": 200,
+    "response": {
+      "status": "ok",
+      "latitude": 26.3592,
+      "longitude": 43.9818,
+      "land_cover": "Built Area",
+      "climate": {
+        "temperature_c": 20.4,
+        "humidity_pct": 49.0,
+        "precipitation_mm": 0.7,
+        "precipitation_period": "previous_7_complete_days",
+        "weather_time": "2026-11-09T21:15",
+        "weather_source_type": "modeled_estimates"
+      },
+      "summary": "Land cover: Built Area (2025 satellite-derived classification). Current modeled air temperature: 20.4 C. Current modeled relative humidity: 49.0%. Modeled precipitation over the previous 7 complete days: 0.7 mm. This describes the location; it does not predict planting or germination success.",
+      "details": {
+        "land_cover_code": 7,
+        "land_cover_year": 2025,
+        "land_cover_source": "Impact Observatory / Microsoft / Esri 10m annual land cover",
+        "weather_source": "Open-Meteo",
+        "analysis_type": "environmental_context_not_planting_suitability",
+        "model_training": "third_party_pretrained_land_cover_model",
+        "version": "1.0.0"
+      }
+    }
+  },
+  {
+    "city": "Riyadh",
+    "http_status": 200,
+    "response": {
+      "status": "ok",
+      "latitude": 24.7136,
+      "longitude": 46.6753,
+      "land_cover": "Built Area",
+      "climate": {
+        "temperature_c": 23.3,
+        "humidity_pct": 46.0,
+        "precipitation_mm": 0.0,
+        "precipitation_period": "previous_7_complete_days",
+        "weather_time": "2026-11-09T21:15",
+        "weather_source_type": "modeled_estimates"
+      },
+      "summary": "Land cover: Built Area (2025 satellite-derived classification). Current modeled air temperature: 23.3 C. Current modeled relative humidity: 46.0%. Modeled precipitation over the previous 7 complete days: 0.0 mm. This describes the location; it does not predict planting or germination success.",
+      "details": {
+        "land_cover_code": 7,
+        "land_cover_year": 2025,
+        "land_cover_source": "Impact Observatory / Microsoft / Esri 10m annual land cover",
+        "weather_source": "Open-Meteo",
+        "analysis_type": "environmental_context_not_planting_suitability",
+        "model_training": "third_party_pretrained_land_cover_model",
+        "version": "1.0.0"
+      }
+    }
+  },
+  {
+    "city": "Abha",
+    "http_status": 200,
+    "response": {
+      "status": "ok",
+      "latitude": 18.2164,
+      "longitude": 42.5053,
+      "land_cover": "Built Area",
+      "climate": {
+        "temperature_c": 17.0,
+        "humidity_pct": 87.0,
+        "precipitation_mm": 0.8,
+        "precipitation_period": "previous_7_complete_days",
+        "weather_time": "2026-11-09T21:15",
+        "weather_source_type": "modeled_estimates"
+      },
+      "summary": "Land cover: Built Area (2025 satellite-derived classification). Current modeled air temperature: 17.0 C. Current modeled relative humidity: 87.0%. Modeled precipitation over the previous 7 complete days: 0.8 mm. This describes the location; it does not predict planting or germination success.",
+      "details": {
+        "land_cover_code": 7,
+        "land_cover_year": 2025,
+        "land_cover_source": "Impact Observatory / Microsoft / Esri 10m annual land cover",
+        "weather_source": "Open-Meteo",
+        "analysis_type": "environmental_context_not_planting_suitability",
+        "model_training": "third_party_pretrained_land_cover_model",
+        "version": "1.0.0"
+      }
+    }
+  }
+]
