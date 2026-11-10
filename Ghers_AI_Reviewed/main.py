@@ -204,6 +204,13 @@ async def analyze(
     }
 
     status = "ok" if land_ok and climate_ok else "partial" if land_ok or climate_ok else "unavailable"
+    source_errors = {}
+    for source, outcome in (("land_cover", land_result), ("weather", climate_result)):
+        if isinstance(outcome, Exception):
+            error = {"type": type(outcome).__name__}
+            if isinstance(outcome, httpx.HTTPStatusError):
+                error["http_status"] = outcome.response.status_code
+            source_errors[source] = error
     result = {
         "status": status,
         "latitude": location.latitude,
@@ -212,6 +219,7 @@ async def analyze(
         "climate": climate,
         "summary": format_summary(land["land_cover"], climate),
         "details": {
+            "source_errors": source_errors,
             "land_cover_code": land["land_cover_code"],
             "land_cover_year": ESRI_YEAR,
             "land_cover_source": "Impact Observatory / Microsoft / Esri 10m annual land cover",
